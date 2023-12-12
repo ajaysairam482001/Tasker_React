@@ -1,0 +1,18 @@
+.navi{
+    color:blueviolet;
+    background-color: rgb(77, 76, 74);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(77, 76, 74);;
+}
+.bodymid{
+    display: flex;
+    justify-content: center;
+}
+.todoinput{
+    width: 80%;
+}

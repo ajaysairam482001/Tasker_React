@@ -1,0 +1,83 @@
+{
+  "task": [
+    {
+      "taskId": 1701419738064,
+      "taskTitle": "edit",
+      "taskTime": "12/1/2023, 2:05:38 PM",
+      "taskCompleted": true,
+      "id": 7
+    },
+    {
+      "taskId": 1701419792992,
+      "taskTitle": "treset",
+      "taskTime": "12/1/2023, 2:06:32 PM",
+      "taskCompleted": false,
+      "id": 9
+    },
+    {
+      "taskId": 1701490937291,
+      "taskTitle": "complete todo",
+      "taskTime": "2/12/2023, 9:52:17 am",
+      "taskCompleted": false,
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "email": "asiddiq538@gmail.com",
+      "password": "$2a$10$.t9vqrF2fQGEwBcL2cH4/.IW7C9uFHzunbMHqZ5pgQOCBB81jvbU.",
+      "fname": "siddiq",
+      "lname": "as",
+      "cpassword": "1212",
+      "id": 1
+    },
+    {
+      "email": "asiddiq5388@gmail.com",
+      "password": "$2a$10$jmqq6IVIh7lS11Bm.h4BNOOlkqUEC4q8ud5/pQtjuTIQBQQfjVFJm",
+      "fname": "Siddiq",
+      "lname": "test",
+      "cpassword": "pass",
+      "id": 2
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$2AimnGy0v/QLJIJXOx0XA.ogDRLqD817HSJ13ED/vXCYxBWSJAY.y",
+      "fname": "Abubakkare",
+      "lname": "siddiq",
+      "cpassword": "password",
+      "id": 3
+    },
+    {
+      "email": "k@gmail.com",
+      "password": "$2a$10$zGEsFJxikdf1Afwg3Z4mzeDF6rh11zGWOnWZDiPXi7OhnjK/FRJOq",
+      "fname": "sami",
+      "lname": "kalim",
+      "cpassword": "password",
+      "id": 4
+    },
+    {
+      "email": "asas@gmail.com",
+      "password": "$2a$10$YVDX1I3tFOXiulrs9za6K.Lq1X/9B6fIodmIamnVVHWaX0R8mirPm",
+      "fname": "AJAY SAI RAM N",
+      "lname": "Ajay",
+      "cpassword": "aaaa",
+      "id": 5
+    },
+    {
+      "email": "ajaysairamn.ece.sec@gmail.com",
+      "password": "$2a$10$liWGuLIcFZ.vY/Omsx4XDuhMswW7F4/zyJ9lVsgGP7g5tlZamNGKu",
+      "fname": "Ajay",
+      "lname": "Sairam",
+      "cpassword": "dddd",
+      "id": 6
+    },
+    {
+      "email": "asass@gmail.com",
+      "password": "$2a$10$12Y5gZVxJ.i/SQ4/Cgxil.SYwMV/uqXu1PcDSWqdEZs2XfkbXx15G",
+      "fname": "Ajay",
+      "lname": "Sairam",
+      "cpassword": "aaaa",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+.header{
+	background-image: url(loginbg.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.box1{
+	
+	height: 85px;
+}
+.box2{
+	border: solid 2px #429397;
+	border-radius: 10px;
+}
+.input{
+	width: 50%;
+    position: relative;
+    left: 20%;
+	font-family: 'Poppins', sans-serif;	
+}
+
+.login_text{
+	text-align: center;
+    padding: 30px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+	color: #429397;
+}
+
+	
+.container-fluid{
+	position: relative;
+}
+.middle{
+	height: 590px;
+    position: relative;
+    margin: 20px;
+    top: 10px
+}
+.footer{
+	background-image: url(loginbg.jpg);
+	background-size: cover;
+	position: relative;
+}
+#buttton{
+	margin: 7%;
+    position: relative;
+    left: 21%;
+}
+

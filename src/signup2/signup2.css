@@ -1,0 +1,100 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.headersignup{
+	width: 100%; 
+	height: 10%;
+/*	background-image: url(loginbg.jpg);*/
+	opacity:100%;
+	overflow: hidden;
+}
+
+#headpic{
+	width: 100%; 
+/*	height:100%;*/
+}
+
+.middlesp{
+	color: black;
+	height: 666px;
+	width: 100%;
+	position: relative;
+	background-image: url(greenbg.webp);
+	opacity: 74%;
+    background-size: 100%;
+	border-radius: 50px;
+	top: 25px;
+}
+
+#midpic{
+	width: 100%;
+	height: 100%;
+	opacity: 75%;
+}
+
+.middleleftsp{
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+.middlecentersp{
+	float:left;
+	width:50%;
+	height: 100%;
+	align-items: center;
+    justify-content: center;
+
+}
+
+.middlerightsp{
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+.footersignup{
+	width: 100%; 
+	height: 10%;
+/*	background-image: url(loginbg.jpg);*/
+	opacity:100%;
+	overflow: hidden;
+}
+
+::placeholder{
+	color: black;
+	opacity: 1;
+	font-family: 'Poppins', sans-serif;
+}
+
+#input{
+	background: transparent;
+	margin: 10px;
+    padding: 9px;
+    width: 65%;
+	border: 1px solid groove;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#register{
+	height: 10px;
+    padding: 3%;
+    font-size: 36px;
+    margin-left: 37%;
+    margin-bottom: 6%;
+}
+#inputdivsp{
+	margin-left: 16%;
+	margin-right: 11%;
+	margin-top: 10px;
+}
+#buttondivsp{
+	margin-top: 2%;
+    margin-left: 30%;
+}
+#buttonsp{
+	cursor: pointer;
+	margin: 13px;
+	font-family: 'Poppins', sans-serif;
+}
