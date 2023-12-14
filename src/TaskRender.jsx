@@ -28,7 +28,7 @@ const TaskRender = ()=>{
                 <i className="bi bi-list-task mx-2"></i>ALL TASKS
             </h1>
             <hr />
-            <div className="allTasks">
+            <div className="allTasks" style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
                         {tasks.length > 0 &&
                             tasks.map((task, index) => {
                                 return (

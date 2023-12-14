@@ -100,9 +100,9 @@ const Task = ({task})=>{
     crossOrigin="anonymous"
     />
 
-<div class="card " style={{width:'100%'}}>
-  <div className='card-body'>
-    {!editmode?(<h5 class="card-title">{tasktitle}</h5>
+<div className="card " style={{width:'51%',margin:"15px"}}>
+  <div className={`card ${isChecked ? 'alert alert-success' : 'alert'}`} style={{margin:"0px",paddingLeft:"10%",paddingRight:"10%"}}>
+    {!editmode?(<h4 class="card-title" style={{marginBottom:"25px"}}>{tasktitle}</h4>
       ):(
         <div className="input-group">
             <input type='text'
@@ -125,7 +125,7 @@ const Task = ({task})=>{
       {isChecked ? "Completed!" : "Pending..."}
       </label>
     </div>
-    <div className={"taskTime align-self-end"}
+    <div className={"taskTime align-self-end"} style={{marginBottom:"2%"}}
          title={"This task was created " + dateDifference(task.tasktime)}>
                     {showDiff ? dateDifference(task.tasktime) : task.tasktime}
                     <i
@@ -136,8 +136,8 @@ const Task = ({task})=>{
                         className="bi bi-clock-history mx-2"></i>
                 </div>
     
-      <button type="button" class="btn btn-primary" onClick={()=>seteditmode(true)}>Edit</button>
-      <button type="button" class="btn btn-danger" onClick={handleDelete}>Delete</button>
+      <button type="button" className="btn btn-primary jjjj" onClick={()=>seteditmode(true)}>Edit</button>
+      <button type="button" className="btn btn-danger jjjj" onClick={handleDelete}>Delete</button>
     
   </div>
 </div>

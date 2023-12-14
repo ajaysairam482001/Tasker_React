@@ -70,7 +70,7 @@ const Todomain = ()=>{
                 style={{backgroundColor:"red"}}>Sign-Out</a>
             </li>
         </ul>   
-        <div className="title"><h2>To-Do List</h2></div>
+        <div className="title"><h2>T A S K E R</h2></div>
 
         <div class="row mt-3 mb-3"
             style={{display:"flex",
