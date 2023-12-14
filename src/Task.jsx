@@ -54,55 +54,42 @@ const Task = ({task})=>{
     const [isChecked, setIsChecked] = useState(task.status);
     const [tasktitle,settasktitle] = useState(task.tasktitle); 
     const { tasks , settasks } = useContext(taskContext);
-    const [todo , settodo] = useState(tasks);
     const [editmode,seteditmode] = useState(false);
     const [showDiff, setShowDiff] = useState(true);
 
     useEffect(() => {
-      settodo((prevTasks) => {
-          const updatedTasks = prevTasks.map((t) =>
-              t.taskid === task.taskid
-                  ? { ...t, status: isChecked, tasktitle: tasktitle }
-                  : t
-          );
-          localStorage.setItem('taskslist', JSON.stringify(updatedTasks));
-          settasks(todo);
-          console.log(todo);
-          console.log(updatedTasks);
-          return updatedTasks;
-      });
-  }, [isChecked, task.taskid, tasktitle]);
+        localStorage.setItem("taskslist", JSON.stringify(tasks));
+    }, [tasks]);
 
-    // useEffect(() => {
-    //   settodo((prevTasks) => {
-    //     const updatedTasks = prevTasks.map((t) =>
-    //       t.taskid === task.taskid ? { ...t, status: isChecked } : t
-    //     );
-    //     localStorage.setItem('taskslist', JSON.stringify(updatedTasks));
-    //     return updatedTasks;
-    //   });
-    // }, [isChecked,task.taskid]);
-
-    // useEffect(() => {
-    //   settodo((prevTasks) => {
-    //     const updatedTasks = prevTasks.map((t) =>
-    //       t.taskid === task.taskid ? { ...t, tasktitle : tasktitle } : t
-    //     );
-    //     localStorage.setItem('taskslist', JSON.stringify(updatedTasks));
-    //     return updatedTasks;
-    //   });
-    // }, [editmode]);
 
     const handlestatusChange = (e)=>{
       setIsChecked(!isChecked);
+
+      settasks((prevTasks) =>
+        prevTasks.map((t) =>
+            t.taskid === task.taskid
+                ? { ...t, status: !isChecked }
+                : t
+        )
+    );
     }
     
+    const handleTitleChange = () => {
+        settasks((prevTasks) =>
+            prevTasks.map((t) =>
+                t.taskid === task.taskid
+                    ? { ...t, tasktitle: tasktitle }
+                    : t
+            )
+        );
+        seteditmode(false);
+    };
 
-    const handleTitleChange = ()=>{
-        console.log(tasktitle);
-        console.log(editmode);
-        
-    }
+    const handleDelete = () => {
+        const updatedTasks = tasks.filter((t) => t.taskid !== task.taskid);
+        settasks(updatedTasks);
+        localStorage.setItem("taskslist", JSON.stringify(updatedTasks));
+    };
     
 
    return<>
@@ -150,7 +137,7 @@ const Task = ({task})=>{
                 </div>
     
       <button type="button" class="btn btn-primary" onClick={()=>seteditmode(true)}>Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button>
+      <button type="button" class="btn btn-danger" onClick={handleDelete}>Delete</button>
     
   </div>
 </div>

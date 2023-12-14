@@ -30,7 +30,7 @@ const Todomain = ()=>{
             return;
         }
 
-        settasks((items) => [...items, newItem]);
+        settasks((prevTasks) => [...prevTasks, newItem]);
         setInput("");
         setnewItem({
             taskid: 0,
